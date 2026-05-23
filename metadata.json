@@ -1,0 +1,6 @@
+{
+  "name": "Lullaby & Cotton",
+  "description": "An AI-powered organic newborn clothing boutique and parenting companion, offering personalized growth tracking, sleep diagnostics, size predictions, and a nurturing parent support chatbot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

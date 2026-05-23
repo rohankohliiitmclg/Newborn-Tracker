@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --color-brand-cream: #FAF9F6;
+  --color-brand-sage: #A3B18A;
+  --color-brand-peach: #FDE8E0;
+  --color-brand-lavender: #E6E3F0;
+  --color-brand-blue: #DCE9F2;
+  --color-brand-gold: #F2C94C;
+  --color-brand-dark: #5C524F;
+  --color-brand-text: #4A4A4A;
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+/* Custom scrollbar for safe, cute design feeling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EDEA;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #E0DBD5;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BEB7;
+}
+
+/* Float micro-animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-cozy-float {
+  animation: float 4s ease-in-out infinite;
+}
